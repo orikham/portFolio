@@ -1,36 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaBonneBlog</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-<body>
-    <header class="mainHeaderRes1 mainHeaderRes2 mainHeaderRes3" >
-        <div class="row-limi-size">
-            <div id="logo"><a href="./index.php"> <img src="./img/logoDef.png"> </a></div>
-            <nav>
-                <ul>
-                    <li><a href="./CVDimitri.php">Présentation</a></li>
-                    <li><a href="./présentation.php">Formation</a></li>
-                    <li><a href="./présentation.php">Mes Projets</a></li>
-                    <li><a href="./présentation.php">Me Contacter</a></li>
-                </ul>
-            </nav>
-            
-        </div>    
-    </header>
 
-    <section>
-            
-            <div class="articles row-limi-size">
+<body>
+    <?php include './squelette/header.php'; ?>
+
+    <section id="presentation">
+
+        <div id="bienvenue" >
             <h1>bienvenue</h1>
-            <aside>
+            <img src="./IMG/imgPresentation.png" title="retour a l'accueil">
+
+
+
+        </div>
+
+        
+        <aside>
+            <fieldset id="question1">
+                <legend>Qui suis je ?</legend>
+                <div id="reponse1">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatum nulla fugit, tempore quos, eos libero similique unde at molestiae cupiditate commodi. Minima impedit dolor rem nemo expedita error consectetur.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vitae perspiciatis impedit magni incidunt, fuga eius, ducimus numquam beatae excepturi, illo nam ab similique consequuntur voluptas rem illum perferendis assumenda. lorem
+                        Je m'appelle Dimitri Johan, 34 ans, célibataire et libre comme l'air !!!!!! Je suis d'origine Bretonne. Né à FOUGERES j'ai effectué toute ma scolarité dans cette ville. A l'age de 16 ans j'ai fait un apprentissage en boulangerie pour finir par travailler dans la restauration. En 2012 suite à des soucis de santé j'ai du arrêter mon métier. Ne voulant pas perdre en autonomie et en qualité de travail j'ai entamer de longue démarche de reconversion. J'ai souhaité me reconvertir dans le develloppement web pour plusieur raisons ! La première est l'attirance pour se domaine et les possibilités créatives qu'il propose. La deuxième car je souhaitais trouvé un emplois qui me permette de m'investir à 200% sans avoir a m'inquiéter pour ma santé comme se fut le cas auparavant. Depuis 2021 je vis dans l'Ain . Grace aux different support informatique (GitHub,discord...) ma localisation ne me freine pas dans mon travail et me permet même de travailler plus loin encore que si j'avais à me déplacer physiquement.  
                     </p>
-            </aside>
-            </div>
+
+                    <!-- <p>
+                        petit truc en prépa!!
+                    </p> -->
+                </div>    
+            </fieldset>
+
+            <fieldset id="question2">
+                <legend>Ce que je fait ?</legend>
+                <div id="reponse2">
+                    <p>
+                        Je développe des sites web correspondant aux besoin des clients et / ou des utilisateurs. je m'emploi à garder un contact permanent avec mon interlocuteur. De la même manière je m'engage à rester disponible durant tous le processus de création de votre projet. Le tout dans le respect des normes imposés par le W3C.
+                    </p>
+
+                    <!-- <p>
+                        petit truc en prépa!!
+                    </p> -->
+                </div>    
+            </fieldset>
+
+            <fieldset id="question3">
+                <legend>Qu'est ce qui me caractérise ?</legend>
+                <div id="reponse3">
+                    <p>
+                        Je sais lassé mes chaussures et compter deux par deux . je suis grand comme ça . je mange tout a la cantine et je finirai bien par trouver un truc a mettre içi quand l'inspiration viendra.
+                    </p>
+
+                    <!-- <p>
+                        petit truc en prépa!!
+                    </p> -->
+                </div>    
+            </fieldset>
+
+            <fieldset id="question4">
+                <legend>Quels sont mes Gouts ?</legend>
+                <div id="reponse4">
+                    <p>
+                        J'aime <span>la chouffe!!!!!!</span> hum hum... pardon je m'emballe. Alors heu... j'aime bien les jeux videos, les mangas, le rythm'n blues, la musique en general avec ou sans paroles. J'aime sortir faire du paintball, du carting, aller au cinéma, boire une bonne bière. je préfere l'été a cause de la chaleur et du retour des BBQ.
+                    </p>
+
+                    <!-- <p>
+                        petit truc en prépa!!
+                    </p> -->
+                </div>    
+            </fieldset>
+        </aside>
+<link rel="stylesheet" href="">
+
+        
     </section>
+
+
+
+<?php require_once './squelette/footer.php';?>

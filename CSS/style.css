@@ -8,31 +8,227 @@ a {
   text-decoration: none;
 }
 
-.row-limit-size {
-  max-width: 1300px;
+/*....................HEADER.............................*/
+body {
+  background-color: #F5D3D4;
   width: 100%;
+}
+
+.mainHeader {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHeader > #logo {
+  width: 400px;
+}
+.mainHeader > #logo > a {
+  width: 400px;
+}
+.mainHeader > #logo > a > img {
+  width: 200px;
+  height: 200px;
+}
+.mainHeader > nav {
+  width: 800px;
+  text-align: center;
+}
+.mainHeader > nav > ul {
+  width: 800px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainHeader > nav > ul > li {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #57304F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeader > nav > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #F5D3D4;
+}
+
+/*....................SECTION.............................*/
+main {
+  width: 100%;
+}
+main > #presentation {
+  width: 100%;
+}
+main > #presentation > #bienvenue {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+main > #presentation > #bienvenue > img {
+  width: 750px;
+  height: 500px;
+  display: flex;
   margin: 0 auto;
 }
-
-body {
-  background-color: #57304f;
+main > #presentation > aside {
+  width: 100%;
 }
-
-/*....................HEADER.............................*/
-.mainHeaderRes1 {
-  width: 100px;
-  height: 100%;
+main > #presentation > aside > fieldset {
+  width: 80%;
+  margin: 25px auto;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px;
 }
-.mainHeaderRes1 .row-limi-size > #logo {
-  margin-right: auto;
+main > #presentation > aside > fieldset > legend {
+  color: #F5D3D4;
+  background-color: #385a64;
+  font-size: 1.8rem;
+  padding: 5px 5px 5px 5px;
 }
-.mainHeaderRes1 .row-limi-size > #logo > a {
+main > #presentation > aside > fieldset > #reponse1, main > #presentation > aside > fieldset #reponse2, main > #presentation > aside > fieldset #reponse3, main > #presentation > aside > fieldset #reponse4 {
+  width: 1500px;
+  background-color: #F5D3D4;
+  color: #57304F;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+main > #mesProjets {
+  width: 100%;
+}
+main > #mesProjets > article {
+  width: 100%;
+}
+main > #mesProjets > article > .containerCards {
+  width: 100%;
   display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 150px;
 }
-.mainHeaderRes1 .row-limi-size > #logo > a > img {
-  width: 50px;
-  height: 50px;
+main > #mesProjets > article > .containerCards > .card {
+  width: 400px;
+  background-color: #57304F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+main > #mesProjets > article > .containerCards > .card > img {
+  width: 400px;
+  height: 200px;
+}
+main > #mesProjets > article > .containerCards > .card > h1 {
+  margin: 10px auto;
+  color: #F5D3D4;
+  font-size: 2.2rem;
+}
+main > #mesProjets > article > .containerCards > .card > h2 {
+  margin-top: 10px;
+  color: #F5D3D4;
+  font-size: 2rem;
+  text-align: center;
+}
+main > #mesProjets > article > .containerCards > .card > p {
+  width: 398px;
+  height: 90px;
+  margin-top: 10px;
+  background-color: #F5D3D4;
+  color: #57304F;
+  font-size: 1.5rem;
+  text-align: center;
+  border-left: 1px solid #57304F;
+  border-right: 1px solid #57304F;
+}
+main > #mesProjets > article > .containerCards > .card > a {
+  width: 250px;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #F5D3D4;
+  color: #57304F;
+}
+
+/*....................FOOTER.............................*/
+@media only screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) {
+  .mainHeaderRes1 {
+    width: 150px;
+    height: 500px;
+    margin-left: 25px;
+    margin-top: 250px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainHeaderRes1 > #logo {
+    width: 150px;
+    height: 100px;
+    background-color: #f5d3d4;
+    display: flex;
+    justify-content: center;
+  }
+  .mainHeaderRes1 > #logo > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .mainHeaderRes1 > #logo > a > img {
+    width: 68px;
+    height: 68px;
+    border: 1px solid #00d4e0;
+    border-radius: 100px;
+    background-color: #57304f;
+  }
+  .mainHeaderRes1 > nav {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5d3d4;
+  }
+  .mainHeaderRes1 > nav > ul {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+  }
+  .mainHeaderRes1 > nav > ul > li {
+    width: 69px;
+    height: 69px;
+    border: 1px solid #00d4e0;
+    background-color: #57304f;
+    border-radius: 100px;
+    margin: 10px auto;
+  }
+  .mainHeaderRes1 > nav > ul > li > a {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #00d4e0;
+    font-size: 0.8rem;
+  }
+  /*....................SECTION.............................*/
+  section {
+    width: 250px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
