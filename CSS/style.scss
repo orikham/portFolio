@@ -1,0 +1,154 @@
+/*............................RAZ.........................*/
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-limit-size {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #57304f;
+}
+
+/*....................HEADER.............................*/
+
+.mainHeaderRes1 {
+  width: 100px;
+  height: 100%;
+
+  .row-limi-size {
+
+
+
+    &>#logo {
+      margin-right: auto;
+
+      &>a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+
+        &>img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #main-header {
+//     background-color: #00d4e0;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 1;
+//     border-bottom: 1px solid #9411fb;
+
+//     .row-limi-size {
+//       max-width: 1200px;
+//       margin: 0 auto;
+//       display: flex;
+//       align-items: center;
+//       height: 100px;
+//     }
+
+//     #logo {
+//       margin-right: auto;
+//       a {
+//         display: flex;
+//         align-items: center;
+//         text-decoration: none;
+//         color: #fff;
+//         img {
+//             width: 100px;
+//           height: 100px;
+//         }
+//       }
+//     }
+
+//     nav {
+//       ul {
+//         list-style: none;
+//         display: flex;
+
+//         li {
+//           width: 100px;
+//           height: 100px;
+//           margin-left: 20px;
+//           border: 1px solid #9411fb;
+//           border-radius: 100px;
+//           text-align: center;
+
+//           a {
+//             width: 100px;
+//             height: 100px;
+//             line-height: 100px;
+//             text-decoration: none;
+//             color: #9411fb;
+//             text-align: center;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+// section{
+//     width: 90%;
+//     margin: 0 auto;
+//     margin-top: 200px;
+//     border: 1px solid blueviolet;
+//     border-radius: 10px;
+//     text-align: center;
+//     color: #9411fb;
+
+// }

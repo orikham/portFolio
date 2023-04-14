@@ -1,0 +1,38 @@
+/*............................RAZ.........................*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-limit-size {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #57304f;
+}
+
+/*....................HEADER.............................*/
+.mainHeaderRes1 {
+  width: 100px;
+  height: 100%;
+}
+.mainHeaderRes1 .row-limi-size > #logo {
+  margin-right: auto;
+}
+.mainHeaderRes1 .row-limi-size > #logo > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.mainHeaderRes1 .row-limi-size > #logo > a > img {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
