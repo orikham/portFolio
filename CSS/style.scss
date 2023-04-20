@@ -18,7 +18,7 @@ a {
 body {
   background-color: #F5D3D4;
   width: 100%;
-}
+} //a retirer en fin de css pour des soucis de coherence
   .mainHeader {
     
     width: 100%;
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //border-bottom: 1px solid #57304F;
+    border-bottom: 1px solid #57304F;
 
 
 
@@ -99,8 +99,8 @@ body {
         width: 80%;
         display: flex;
         flex-direction: column;
-        margin: 25px auto;
-        //border: 1px solid #57304F;
+        margin: 0 auto;
+        
         
 
         &>img{
@@ -108,9 +108,30 @@ body {
           height: 500px;
           display: flex;
           margin: 0 auto;
+          position: relative;
           
           
   
+        }
+
+        h1{
+          width: 400px;
+          font-size: 1rem; ;
+          position: absolute;
+          text-align: center;
+          margin-top: 150px ;
+          margin-left: 550px;
+          color: #F5D3D4;
+        }
+
+        p{
+          width: 350px;
+          font-size: 1rem; ;
+          position: absolute;
+          text-align: center;
+          margin-top: 200px ;
+          margin-left: 570px;
+          color: #F5D3D4;
         }
 
       }
@@ -120,28 +141,49 @@ body {
 
         &>fieldset{
           width: 80%;
-          margin: 25px auto;
+          margin: 30px auto;
           border-radius: 5px;
           box-shadow: 20px 20px 20px ;
 
+          &:nth-child(2), &:nth-child(4){
+            legend{
+            margin-left: 75%;
+            
+            }
+          }
+
           &>legend{
-            //width: 190px;
+            width: 350px;
             color: #F5D3D4;
             background-color: #385a64;
             font-size: 1.8rem;
             padding: 5px 5px 5px 5px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            
+            
           }
 
           &>#reponse1, #reponse2, #reponse3, #reponse4{
             width: 1500px;
             background-color: #F5D3D4 ;
             color:#57304F ;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             padding: 10px;
+            
+            span{
+              font-weight: bold;
+              font-size: 2rem;
+            }
             
           }
         }
+
+        
       }
+
+      
 
       
     }
@@ -226,9 +268,151 @@ body {
             }
         }
     }
+
+    &>#formation{
+      width: 100%;
+      border: 1px solid red;
+      margin: 0 auto;
+
+      &>#onglet{
+        width: 400px;
+        height: 50px;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1px solid #5f256f;
+
+        &>a{
+          width: 50%;
+          color: #5f256f;
+          text-align: center;
+        }
+      }
+    }
+
+    &>#contact{
+      width: 100%;
+
+      &>#titreFormulaire{
+        width: 100%;
+        text-align: center;
+      }
+
+      &>#formulaire{
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 25px auto;
+        box-shadow: 0 0 40px 30px #F0F0F2;
+        border-radius: 10px 10px 10px 10px ;
+
+        &>#boite{
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+
+          &>#infosContact{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>p{
+              margin-top: 20px;
+            }
+          }
+
+          &>form{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin-top: 25px;
+
+            &>.champ{
+              width: 250px;
+              margin-left: 39px;
+              margin-top: 30px;
+              color: #14183d;
+
+              &>input{
+                border: 0;
+                border-bottom: 1px solid #57304F;
+              }
+            }
+
+            &>.formu{
+              width: 100px;
+              height: 50px;
+              cursor: pointer;
+              display: flex;
+              margin: 25px auto;
+              justify-content: center;
+              align-items: center;
+              color: #F5D3D4;
+              font-size: 1.3rem;
+              background-color: #57304F;
+              border: 0;
+              border-radius: 10px 10px 10px 10px ;
+              box-shadow: 0 0 10px 3px #5f256f ;
+
+
+            }
+
+            &>.formu:hover{
+              display: block;
+              transform: scale(1.5, 1.5);
+              margin: 25px auto;
+              cursor: pointer;
+            }
+
+            &>#identity{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              margin-bottom: 10px;
+
+              &>.champ>input{
+                border: 0;
+                border-bottom: 1px solid #57304F;
+
+              }
+            }
+
+            
+
+  
+          }
+
+        }
+
+        &>img{
+          width: 500px;
+          height: 100%;
+          border: 1px solid #57304F;
+        }
+
+        
+
+      }
+    }
 }
 
 /*....................FOOTER.............................*/
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  border-top: solid 1px grey;
+}
+
+
+/*....................MEDIA.QUERIES.............................*/
 
   @media only screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) {
     .mainHeaderRes1 {

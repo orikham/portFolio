@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 <?php require_once './squelette/header.php';?>
     
@@ -9,7 +8,7 @@
 
    
 
-    <main>
+    
         <section id="mesProjets">
         <?php 
                     $sql = ("SELECT `id_projet`, `title`,`thumbnail`, `resume`, `frontEnd`, `created_at`, `link` FROM `projet` ORDER BY `id_projet` ");

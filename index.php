@@ -1,12 +1,13 @@
 
-<body>
     <?php include './squelette/header.php'; ?>
 
     <section id="presentation">
 
         <div id="bienvenue" >
-            <h1>bienvenue</h1>
-            <img src="./IMG/imgPresentation.png" title="retour a l'accueil">
+            
+            <img src="./IMG/imgPresentation.png" title="message de bienvenue">
+            <h1>BIENVENUE SUR MON PORTFOLIO!!!!</h1>
+            <p>Je m’appelle Dimitri je suis développeur Web et Web mobile. Je vous invite à venir découvrir mes éxperience, mon travail et mes projets.</p>
 
 
 
