@@ -30,11 +30,16 @@
                     </div><br>
                     <div class="champ">
                         <label for="Message"> Message : </label><br>
-                        <input type="text" id="Message" style="width:400px;" placeholder="Votre message/demande d'information">
+                        <textarea type="text" id="Message" placeholder="Votre message/demande d'information"></textarea>
                     </div>
-                    <summit class="formu">Envoyer</button>
+                    <submit class="formu">Envoyer</submit>
             </form>
         </div>
-        <img src="./IMG/reseauxSociaux.png" alt="social picture" width="500px">
+        <div id="reseauxSociaux">
+            <img src="./IMG/reseauxSociaux.png" alt="social picture" width="500px">
+            <div id="logosSocial">
+                
+            </div>
+        </div>
     </article>
 </section>

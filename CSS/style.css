@@ -118,14 +118,20 @@ main > #presentation > aside > fieldset > legend {
   display: flex;
   justify-content: center;
 }
-main > #presentation > aside > fieldset > #reponse1, main > #presentation > aside > fieldset #reponse2, main > #presentation > aside > fieldset #reponse3, main > #presentation > aside > fieldset #reponse4 {
+main > #presentation > aside > fieldset > #reponse1,
+main > #presentation > aside > fieldset #reponse2,
+main > #presentation > aside > fieldset #reponse3,
+main > #presentation > aside > fieldset #reponse4 {
   width: 1500px;
   background-color: #F5D3D4;
   color: #57304F;
   font-size: 1.6rem;
   padding: 10px;
 }
-main > #presentation > aside > fieldset > #reponse1 span, main > #presentation > aside > fieldset #reponse2 span, main > #presentation > aside > fieldset #reponse3 span, main > #presentation > aside > fieldset #reponse4 span {
+main > #presentation > aside > fieldset > #reponse1 span,
+main > #presentation > aside > fieldset #reponse2 span,
+main > #presentation > aside > fieldset #reponse3 span,
+main > #presentation > aside > fieldset #reponse4 span {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -194,17 +200,44 @@ main > #formation {
   width: 100%;
   border: 1px solid red;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-main > #formation > #onglet {
+main > #formation > .carousel {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+main > #formation > .carousel > .carouselItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: 1px solid #57304F;
+}
+main > #formation > .carousel > .carouselItem > img {
+  width: 150px;
+  height: 150px;
+}
+main > #formation > .carousel > .carouselItem.active {
+  opacity: 1;
+}
+main > #onglet {
   width: 400px;
   height: 50px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid #5f256f;
+  align-items: center;
 }
-main > #formation > #onglet > a {
+main > #onglet > a {
   width: 50%;
   color: #5f256f;
   text-align: center;
@@ -215,16 +248,17 @@ main > #contact {
 main > #contact > #titreFormulaire {
   width: 100%;
   text-align: center;
+  margin-top: 50px;
+  color: #57304F;
 }
 main > #contact > #formulaire {
   width: 1000px;
   height: 100%;
   display: flex;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 25px auto;
-  box-shadow: 0 0 40px 30px #F0F0F2;
+  margin: 50px auto;
+  background-color: #57304f;
   border-radius: 10px 10px 10px 10px;
 }
 main > #contact > #formulaire > #boite {
@@ -238,14 +272,18 @@ main > #contact > #formulaire > #boite > #infosContact {
   flex-direction: column;
   align-items: center;
 }
+main > #contact > #formulaire > #boite > #infosContact > h2 {
+  color: #F5D3D4;
+  margin-top: 10px;
+}
 main > #contact > #formulaire > #boite > #infosContact > p {
   margin-top: 20px;
+  color: #F5D3D4;
 }
 main > #contact > #formulaire > #boite > form {
   width: 500px;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   margin-top: 25px;
 }
 main > #contact > #formulaire > #boite > form > .champ {
@@ -254,9 +292,23 @@ main > #contact > #formulaire > #boite > form > .champ {
   margin-top: 30px;
   color: #14183d;
 }
+main > #contact > #formulaire > #boite > form > .champ > label {
+  color: #F5D3D4;
+}
 main > #contact > #formulaire > #boite > form > .champ > input {
   border: 0;
-  border-bottom: 1px solid #57304F;
+  height: 25px;
+  border-radius: 50px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+main > #contact > #formulaire > #boite > form > .champ > textarea {
+  width: 400px;
+  height: 300px;
+  resize: none;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 10px;
 }
 main > #contact > #formulaire > #boite > form > .formu {
   width: 100px;
@@ -266,28 +318,38 @@ main > #contact > #formulaire > #boite > form > .formu {
   margin: 25px auto;
   justify-content: center;
   align-items: center;
-  color: #F5D3D4;
+  color: #57304F;
   font-size: 1.3rem;
-  background-color: #57304F;
+  background-color: #f5d3d4;
   border: 0;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0 10px 3px #5f256f;
 }
 main > #contact > #formulaire > #boite > form > .formu:hover {
   display: block;
+  height: 50px;
   transform: scale(1.5, 1.5);
-  margin: 25px auto;
   cursor: pointer;
+  text-align: center;
+  line-height: 50px;
 }
 main > #contact > #formulaire > #boite > form > #identity {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 10px;
 }
+main > #contact > #formulaire > #boite > form > #identity > .champ > label {
+  color: #F5D3D4;
+}
 main > #contact > #formulaire > #boite > form > #identity > .champ > input {
   border: 0;
-  border-bottom: 1px solid #57304F;
+  width: 150px;
+  height: 25px;
+  border-radius: 50px;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 main > #contact > #formulaire > img {
   width: 500px;
