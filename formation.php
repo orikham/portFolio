@@ -6,7 +6,7 @@
 		<a href="#">Developpeur Web</a>
 		<!-- <a href="#">Boulangerie</a>
 		<a href="#">Restauration</a> -->
-	</div>
+</div>
 
 <section id="formation">
 	
@@ -14,15 +14,16 @@
 			<h2>Etudes et diplômes</h2>
 			<ul>
 				<li>2023 : Developpeur Web et Web Mobile </li>
-				<li>2014 : Action Territoriale d'Insertion5 mois AREP de Fougères</li>
+				<li>2014 : Action Territoriale d'Insertion 5 mois AREP de Fougères</li>
 				<li>2013 : Compétences Clés3 mois CLPS Fougères</li>
-				<li>2008 : Prestation d'Orientation Professionnelle3 mois CLPS Fougères</li>
-				<li>2007 : Niveau CAP Boulanger2 ans CFA Ker lann</li>
+				<li>2008 : Prestation d'Orientation Professionnelle 3 mois CLPS Fougères</li>
+				<li>2007 : Niveau CAP Boulanger 2 ans CFA Ker lann</li>
 				<li>2003 : B2I college jeanne d’arc fougere</li>
 			</ul>
 		</div>
 
 		<div class="carousel">
+			<h2>Compétences</h2>
 			<div class="carouselItem">
 				<img src="./SVG/behance.svg">
 			</div>
@@ -68,10 +69,10 @@
 					2 mois <span class="ligne">ENTREPRISE-VILLE</span></br>
 					</br>
 					2018 <span class="ligne">developpeur web stagiaire (stage de decouverte)</span></br>
-					3 semaine <span class="ligne">yo&co-St Aubin du Cormiers</span></br>
+					3 semaine <span class="ligne">ATI informatique-St Aubin du Cormiers</span></br>
 					
 				</p>
-				</div>
+		</div>
 </section>
 
 
