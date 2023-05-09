@@ -647,57 +647,34 @@ footer {
 
 @media only screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) {
   .mainHeaderRes1 {
+    max-width: 600px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-left: 50%;
+    margin-top: 25px;
+    border: none;
     
     
-    &>#logo {
-      
 
-
-
-
-      &>a {
-        
-
-        &>img {
-          
-
-        }
-      }
-    }
-
-    &>nav {
-      
-
-      &>ul {
-        
-
-        &>li {
-          
-
-
-          &>a {
-            
-            
-
-            
-
-          }
-        }
-      }
-    }
+    
 
 
   }
 
   /*....................SECTION.............................*/
-  section {
-    
+  main{
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid black;
+
+    &>#presentation{
+      
+    width: 100%;
+
+    }
 
   }
+  
 
 }
 
