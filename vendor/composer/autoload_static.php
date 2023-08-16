@@ -9,6 +9,8 @@ class ComposerStaticInit3d7d0c19b118644aa604be02e8b2e1a1
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '979dffec6fa5205cabd2c2cd1e9e6b3a' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/Http/Psr7/functions.php',
+        '6783aef8c489bbc166eee2536fe605d5' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,6 +22,16 @@ class ComposerStaticInit3d7d0c19b118644aa604be02e8b2e1a1
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'A' => 
+        array (
+            'Algolia\\AlgoliaSearch\\' => 22,
         ),
     );
 
@@ -35,6 +47,22 @@ class ComposerStaticInit3d7d0c19b118644aa604be02e8b2e1a1
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Algolia\\AlgoliaSearch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src',
         ),
     );
 
