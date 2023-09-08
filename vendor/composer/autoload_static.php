@@ -70,6 +70,8 @@ class ComposerStaticInit3d7d0c19b118644aa604be02e8b2e1a1
         'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Controller' => __DIR__ . '/../..' . '/controller/Controller.php',
+        'HomeController' => __DIR__ . '/../..' . '/controller/HomeController.php',
+        'Model' => __DIR__ . '/../..' . '/model/Model.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

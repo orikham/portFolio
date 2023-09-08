@@ -9,4 +9,6 @@ return array(
     'AltoRouter' => $vendorDir . '/altorouter/altorouter/AltoRouter.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Controller' => $baseDir . '/controller/Controller.php',
+    'HomeController' => $baseDir . '/controller/HomeController.php',
+    'Model' => $baseDir . '/model/Model.php',
 );

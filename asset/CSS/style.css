@@ -11,9 +11,9 @@ a {
 /*....................HEADER.............................*/
 body {
   background-color: #F5D3D4;
-  width: 100%;
 }
 
+/*header*/
 .mainHeader {
   width: 100%;
   height: 250px;
@@ -61,6 +61,7 @@ body {
 /*....................SECTION.............................*/
 main {
   width: 100%;
+  /*accueil*/
 }
 main > #presentation {
   width: 100%;
@@ -196,101 +197,59 @@ main > #mesProjets > article > .containerCards > .card > a {
   background-color: #F5D3D4;
   color: #57304F;
 }
-main > #onglet {
-  width: 400px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-main > #onglet > a {
-  width: 50%;
-  color: #5f256f;
-  text-align: center;
-}
 main > #formation {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-main > #formation h2, main > #formation li, main > #formation p {
+main > #formation > #groupstyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px;
+}
+main > #formation > #groupstyle > #etudesEtDiplomes {
+  width: 40%;
+  border: 5px solid white;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  background-color: #57304F;
+  text-align: center;
+  justify-content: center;
   color: #F5D3D4;
 }
-main > #formation > #etudesEtDiplomes {
-  width: 30%;
-  height: 200px;
+main > #formation > #groupstyle > #etudesEtDiplomes > h2 {
+  padding: 5px;
+  text-align: center;
+}
+main > #formation > #groupstyle > #etudesEtDiplomes > ul {
+  list-style-type: none;
+  margin: 15px auto;
+  text-align: start;
+}
+main > #formation > #groupstyle > #etudesEtDiplomes > ul > li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+main > #formation > #groupstyle > #Expro {
+  width: 40%;
   border: 5px solid white;
   display: flex;
   border-radius: 50%;
   flex-direction: column;
-  margin-top: 25px;
-  margin-left: 25px;
   background-color: #57304F;
   text-align: center;
   justify-content: center;
+  color: #F5D3D4;
 }
-main > #formation > #etudesEtDiplomes > ul {
-  width: 100%;
-  list-style-type: none;
-}
-main > #formation > #etudesEtDiplomes > ul > li {
-  width: 100%;
-  list-style-type: none;
-}
-main > #formation > .carousel {
-  position: relative;
-  width: 25%;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 25px;
-}
-main > #formation > .carousel > .carouselItem {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 50%;
-  height: 250px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-}
-main > #formation > .carousel > .carouselItem > img {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-}
-main > #formation > .carousel > .carouselItem.active {
-  opacity: 1;
-}
-main > #formation > #Expro {
-  width: 30%;
-  height: 200px;
-  border: 5px solid white;
-  display: flex;
-  border-radius: 50%;
-  flex-direction: column;
-  margin-top: 25px;
-  margin-left: 25px;
-  background-color: #57304F;
+main > #formation > #groupstyle > #Expro > h2 {
+  padding: 5px;
   text-align: center;
-  justify-content: center;
 }
-main > #formation > div:first-child {
-  align-self: flex-start;
-}
-main > #formation > div:nth-child(2) {
-  align-self: flex-end;
-}
-main > #formation > div:last-child {
-  align-self: flex-start;
+main > #formation > #groupstyle > #Expro > p {
+  white-space: pre-line;
 }
 main > #contact {
   width: 100%;

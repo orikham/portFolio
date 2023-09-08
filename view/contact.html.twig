@@ -1,4 +1,13 @@
-<?php include './squelette/header.php'; ?>
+{% extends "template.html.twig" %}
+
+{% block title %}Bienvenue sur mon Portfolio
+{% endblock %}
+
+{% block header %}
+	{% include 'header.html.twig' %}
+{% endblock %}
+
+{% block content %}
 
 <section id="contact">
     <div id="titreFormulaire">
@@ -44,18 +53,19 @@
             </form>
         </div>
         <div id="reseauxSociaux">
-            <div id="fondImg"><img class="rezo" src="./IMG/reseauxSociaux.png" alt="social picture" ></div>
+            <div id="fondImg"><img class="rezo" src="./asset/media/images/reseauxSociaux.png" alt="social picture" ></div>
             <div id="logosSocial">
-                <a class="mediaLogo" href="http://"><img  src="./SVG/Facebook.svg" alt=""></a>
-                <a class="mediaLogo" href="https://www.instagram.com/"><img class="mediaLogo" src="./SVG/instagram.svg" alt=""></a>
-                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/discord.svg" alt=""></a>
-                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/linkedin.svg" alt=""></a>
-                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/snapchat.svg" alt=""></a>
-                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/twitter.svg" alt=""></a>
-                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/whatsapp.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img  src="./asset/media/SVG/Facebook.svg" alt=""></a>
+                <a class="mediaLogo" href="https://www.instagram.com/"><img class="mediaLogo" src="./asset/media/SVG/instagram.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./asset/media/SVG/discord.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./asset/media/SVG/linkedin.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./asset/media/SVG/snapchat.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./asset/media/SVG/twitter.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./asset/media/SVG/whatsapp.svg" alt=""></a>
 
 
             </div>
         </div>
     </article>
 </section>
+{% endblock %}
