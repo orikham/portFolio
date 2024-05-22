@@ -1,4 +1,28 @@
-  // menus borne d'arcade + jeu de bandit manchot
+
+
+
+
+
+  $(document).ready(function() { // $ remplace/equivaut a ecrire jquery
+    // Ajouter la classe 'active' au premier élément carouselItem
+    $('.carouselItem').first().addClass('active');
+  
+    setInterval(function() {
+      // Retirer la classe 'active' de l'élément actif actuel et ajouter la classe 'active' à l'élément suivant
+      $('.active').removeClass('active').next('.carouselItem').addClass('active');
+  
+      // Si aucun élément n'est actif, ajouter la classe 'active' au premier élément
+      if ($('.active').length == 0) {
+        $('.carouselItem').first().addClass('active');
+      }
+    }, 1500); 
+  });
+  
+
+
+
+
+  // menus borne d'arcade 
   document.addEventListener('DOMContentLoaded', () => {
     const dateList = document.querySelectorAll('#date-list li');
     const popupContent = document.getElementById('popup-content');
@@ -18,7 +42,7 @@
     };
 
     // Tableau des symboles
-    const symbols = ['SVG/figma.svg','SVG/css3.svg', 'SVG/html5.svg','SVG/git.svg', 'SVG/php.svg', 'SVG/notion.svg', 'SVG/vs_code.svg','SVG/js.svg',]; // Mettez ici les noms de vos images
+    const symbols = ['SVG/behance.svg','SVG/css3.svg', ]; // Mettez ici les noms de vos images
 
     // Fonction pour générer un symbole aléatoire
     function randomSymbol() {
@@ -68,7 +92,6 @@
         currentIndex = (currentIndex > 0) ? currentIndex - 1 : dateList.length - 1;
         highlightDate(currentIndex);
         playClickSound();
-        document.getElementById('prev-btn').style.zIndex = '10';
     });
 
     document.getElementById('next-btn').addEventListener('click', () => {
