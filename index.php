@@ -5,10 +5,10 @@
 
         <div id="bienvenue" >
             
-            <img src="./IMG/imgPresentation.png" title="message de bienvenue">
-            <h1>BIENVENUE SUR MON PORTFOLIO!!!!</h1>
-            <p>Je m’appelle Dimitri je suis développeur Web et Web mobile. Je vous invite à venir découvrir mes éxperience, mon travail et mes projets.</p>
-
+            <div id="boxtext">
+                <h1>BIENVENUE SUR MON PORTFOLIO!!!!</h1>
+                <p>Je m’appelle Dimitri je suis développeur Web et Web mobile. Je vous invite à venir découvrir mes éxperience, mon travail et mes projets.</>
+            </div>
 
 
         </div>

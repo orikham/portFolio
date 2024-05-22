@@ -7,8 +7,8 @@
 					2023 <span class="ligne">developpeur web stagiaire</span></br>
 					2 mois <span class="ligne">ENTREPRISE-VILLE</span></br>
 					</br>
-					2018 <span class="ligne">developpeur web stagiaire (stage de decouverte)</span></br>
-					3 semaine <span class="ligne">ATI informatique-St Aubin du Cormiers</span></br>
+					2018 developpeur web stagiaire (stage de decouverte)
+					3 semaine ATI informatique-St Aubin du Cormiers
 					
 				</p>
 		</div> -->
@@ -32,7 +32,7 @@
 			<li data-date="2023">2023</li>
 		</ul>
 		<div id="popup-content" class="popup">
-			<span class="close-btn">X</span>
+			<span class="close-btn">BACK</span>
 			<div id="content"></div>
 		</div>
 		<div class="controls">

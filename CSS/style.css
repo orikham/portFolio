@@ -20,7 +20,6 @@ body {
 }
 
 .mainHeader {
-  width: 100%;
   height: 250px;
   display: flex;
   justify-content: space-between;
@@ -72,29 +71,35 @@ main > #presentation {
   width: 100%;
 }
 main > #presentation > #bienvenue {
+  background-image: url(./imgPresentation.png);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  height: 500px;
+}
+main > #presentation > #bienvenue > #boxtext {
+  height: 500px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 100px auto;
 }
-main > #presentation > #bienvenue > img {
+main > #presentation > #bienvenue > #boxtext > h1 {
+  width: 300px;
+  font-size: 1rem;
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+  padding: 5px;
+  color: #F5D3D4;
+}
+main > #presentation > #bienvenue > #boxtext > p {
+  width: 300px;
+  font-size: 1rem;
+  text-align: center;
+  color: #F5D3D4;
   display: flex;
   margin: 0 auto;
-}
-main > #presentation > #bienvenue > h1 {
-  width: 400px;
-  font-size: 1rem;
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-}
-main > #presentation > #bienvenue > p {
-  width: 350px;
-  font-size: 1rem;
-  position: absolute;
-  text-align: center;
-  margin-top: 200px;
-  margin-left: 570px;
-  color: #F5D3D4;
 }
 main > #presentation > aside {
   display: flex;
@@ -150,81 +155,6 @@ main > #presentation > aside > .miroir > .reponse {
 main > #presentation > aside > .miroir > .reponse span {
   font-weight: bold;
   font-size: 2rem;
-}
-main > #mesProjets {
-  width: 100%;
-}
-main > #mesProjets > article {
-  width: 100%;
-}
-main > #mesProjets > article > .containerCards {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 150px;
-}
-main > #mesProjets > article > .containerCards > .card {
-  width: 400px;
-  background-color: #57304F;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px;
-  margin-bottom: 50px;
-  position: relative;
-}
-main > #mesProjets > article > .containerCards > .card > img {
-  width: 400px;
-  height: 200px;
-}
-main > #mesProjets > article > .containerCards > .card > h1 {
-  margin: 10px auto;
-  color: #F5D3D4;
-  font-size: 2.2rem;
-}
-main > #mesProjets > article > .containerCards > .card > h2 {
-  margin-top: 10px;
-  color: #F5D3D4;
-  font-size: 2rem;
-  text-align: center;
-}
-main > #mesProjets > article > .containerCards > .card > p {
-  width: 398px;
-  height: 90px;
-  margin-top: 10px;
-  background-color: #F5D3D4;
-  color: #57304F;
-  font-size: 1.5rem;
-  text-align: center;
-  border-left: 1px solid #57304F;
-  border-right: 1px solid #57304F;
-}
-main > #mesProjets > article > .containerCards > .card > a {
-  width: 250px;
-  margin: 15px auto;
-  border-radius: 10px;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: #F5D3D4;
-  color: #57304F;
-}
-main > #onglet {
-  width: 400px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-main > #onglet > a {
-  width: 50%;
-  color: #5f256f;
-  text-align: center;
 }
 main > #formation {
   width: 100%;
@@ -289,8 +219,8 @@ main > #formation > .arcade-menu .controls {
 main > #formation > .arcade-menu .controls #prev-btn {
   background-color: #800000;
   border-radius: 100px;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   border: 0;
   margin: 5px;
@@ -298,8 +228,8 @@ main > #formation > .arcade-menu .controls #prev-btn {
 main > #formation > .arcade-menu .controls #next-btn {
   background-color: #800000;
   border-radius: 100px;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   border: 0;
   margin: 5px;
@@ -309,18 +239,17 @@ main > #formation > .arcade-menu .controls #select-btn {
   transform: rotate(-45deg);
   height: 25px;
   border: 0;
-  margin: 5px;
+  margin: -5px 5px;
   cursor: pointer;
   border-radius: 50px;
   width: 50px;
-  margin: 20px 5px 5px 5px;
 }
 main > #formation > .arcade-menu .controls #game-btn {
   background-color: #D3D3D3;
   transform: rotate(-45deg);
   cursor: pointer;
   border: 0;
-  margin: 20px 5px 5px 5px;
+  margin: -5px 5px;
   height: 25px;
   border-radius: 50px;
   width: 50px;
@@ -348,70 +277,75 @@ main > #formation > .arcade-menu #popup-content .close-btn {
   align-items: center;
   border: 0;
 }
-main > #formation h2,
-main > #formation li,
-main > #formation p {
+main > #mesProjets > article > .containerCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  flex: 1 0 30%;
+}
+main > #mesProjets > article > .containerCards > .card {
+  max-width: 350px;
+  width: 100%;
+  background-color: #57304F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  margin: 25px;
+}
+main > #mesProjets > article > .containerCards > .card > img {
+  width: 350px;
+  height: 200px;
+}
+main > #mesProjets > article > .containerCards > .card > h1 {
+  margin: 10px auto;
   color: #F5D3D4;
+  font-size: 2.2rem;
 }
-main > #formation > #etudesEtDiplomes {
-  width: 30%;
-  height: 200px;
-  border: 5px solid white;
-  display: flex;
-  border-radius: 50%;
-  flex-direction: column;
-  margin-top: 25px;
-  margin-left: 25px;
-  background-color: #57304F;
+main > #mesProjets > article > .containerCards > .card > h2 {
+  width: 300px;
+  margin-top: 10px;
+  color: #F5D3D4;
+  font-size: 2rem;
   text-align: center;
+}
+main > #mesProjets > article > .containerCards > .card > p {
+  width: 348px;
+  height: 90px;
+  margin-top: 10px;
+  background-color: #F5D3D4;
+  color: #57304F;
+  font-size: 1.5rem;
+  text-align: center;
+  border-left: 1px solid #57304F;
+  border-right: 1px solid #57304F;
+}
+main > #mesProjets > article > .containerCards > .card > a {
+  width: 250px;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #F5D3D4;
+  color: #57304F;
+}
+main > #onglet {
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
-main > #formation > #etudesEtDiplomes > ul {
-  width: 100%;
-  list-style-type: none;
-}
-main > #formation > #etudesEtDiplomes > ul > li {
-  width: 100%;
-  list-style-type: none;
-}
-main > #formation > .carousel {
-  position: relative;
+main > #onglet > a {
   width: 50%;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 25px;
-}
-main > #formation > .carousel > .carouselItem {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  display: flex;
-  justify-content: flex-end;
-}
-main > #formation > .carousel > .carouselItem > img {
-  width: 150px;
-  height: 150px;
-}
-main > #formation > .carousel > .carouselItem.active {
-  opacity: 1;
-}
-main > #formation > #Expro {
-  width: 30%;
-  height: 200px;
-  border: 5px solid white;
-  display: flex;
-  border-radius: 50%;
-  flex-direction: column;
-  margin-top: 25px;
-  margin-left: 25px;
-  background-color: #57304F;
+  color: #5f256f;
   text-align: center;
-  justify-content: center;
 }
 main > #contact {
   width: 100%;

@@ -37,12 +37,13 @@
         '2008': 'Prestation d\'Orientation Professionnelle 3 mois CLPS Fougères',
         '2013': 'Compétences Clés3 mois CLPS Fougères',
         '2014': 'Action Territoriale d\'Insertion 5 mois AREP de Fougères',
-        '2019': 'MOOC developpeur web junior via Openclassroom',
+        '2019': 'developpeur web stagiaire (stage de decouverte)\ 3 semaine ATI informatique-St Aubin du Cormiers puis MOOC developpeur web junior via Openclassroom ',
+        
         '2023': 'Developpeur Web et Web Mobile'
     };
 
     // Tableau des symboles
-    const symbols = ['SVG/behance.svg','SVG/css3.svg', ]; // Mettez ici les noms de vos images
+    const symbols = ['SVG/behance.svg','SVG/css3.svg', 'SVG/discord.svg', 'SVG/dribbble.svg', 'SVG/notion.svg', 'SVG/figma.svg', 'SVG/git.svg', 'SVG/html5.svg', 'SVG/js.svg', 'SVG/php.svg', 'SVG/vs_code.svg']; // Mettez ici les noms de vos images
 
     // Fonction pour générer un symbole aléatoire
     function randomSymbol() {
@@ -108,7 +109,7 @@
         const selectedDate = dateList[currentIndex].getAttribute('data-date');
         contentDiv.innerHTML = datesContent[selectedDate];
         popupContent.style.display = 'block';
-        
+        playSelectSound();
     });
 
     document.getElementById('game-btn').addEventListener('click', () => {
@@ -121,7 +122,7 @@
             // Déclenche le son de jackpot
             const jackpotSound = new Audio('jackpotsong.mp3');
             jackpotSound.play();
-            playSelectSound();
+            
         }
     });
 
