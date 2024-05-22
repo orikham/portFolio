@@ -8,6 +8,11 @@ a {
   text-decoration: none;
 }
 
+.row-limit-size {
+  max-width: 1200px;
+  width: 100%;
+}
+
 /*....................HEADER.............................*/
 body {
   background-color: #F5D3D4;
@@ -60,34 +65,29 @@ body {
 
 /*....................SECTION.............................*/
 main {
-  width: 100%;
+  display: flex;
+  margin: 0 auto;
 }
 main > #presentation {
   width: 100%;
 }
 main > #presentation > #bienvenue {
-  width: 80%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 main > #presentation > #bienvenue > img {
-  width: 750px;
-  height: 500px;
   display: flex;
   margin: 0 auto;
-  position: relative;
 }
-main > #presentation > #bienvenue h1 {
+main > #presentation > #bienvenue > h1 {
   width: 400px;
   font-size: 1rem;
-  position: absolute;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 150px;
-  margin-left: 550px;
-  color: #F5D3D4;
+  color: black;
 }
-main > #presentation > #bienvenue p {
+main > #presentation > #bienvenue > p {
   width: 350px;
   font-size: 1rem;
   position: absolute;
@@ -97,16 +97,14 @@ main > #presentation > #bienvenue p {
   color: #F5D3D4;
 }
 main > #presentation > aside {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main > #presentation > aside > fieldset {
-  width: 80%;
   margin: 30px auto;
   border-radius: 5px;
   box-shadow: 20px 20px 20px;
-}
-main > #presentation > aside > fieldset:nth-child(2) legend, main > #presentation > aside > fieldset:nth-child(4) legend {
-  margin-left: 75%;
 }
 main > #presentation > aside > fieldset > legend {
   width: 350px;
@@ -114,24 +112,42 @@ main > #presentation > aside > fieldset > legend {
   background-color: #385a64;
   font-size: 1.8rem;
   padding: 5px 5px 5px 5px;
-  margin-left: 20px;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
 }
-main > #presentation > aside > fieldset > #reponse1,
-main > #presentation > aside > fieldset #reponse2,
-main > #presentation > aside > fieldset #reponse3,
-main > #presentation > aside > fieldset #reponse4 {
-  width: 1500px;
+main > #presentation > aside > fieldset > .reponse {
   background-color: #F5D3D4;
   color: #57304F;
   font-size: 1.6rem;
   padding: 10px;
 }
-main > #presentation > aside > fieldset > #reponse1 span,
-main > #presentation > aside > fieldset #reponse2 span,
-main > #presentation > aside > fieldset #reponse3 span,
-main > #presentation > aside > fieldset #reponse4 span {
+main > #presentation > aside > fieldset > .reponse span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+main > #presentation > aside > .miroir {
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px;
+}
+main > #presentation > aside > .miroir > legend {
+  width: 350px;
+  color: #F5D3D4;
+  background-color: #385a64;
+  font-size: 1.8rem;
+  padding: 5px 5px 5px 5px;
+  margin-left: 65%;
+  display: flex;
+  justify-content: center;
+}
+main > #presentation > aside > .miroir > .reponse {
+  background-color: #F5D3D4;
+  color: #57304F;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+main > #presentation > aside > .miroir > .reponse span {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -196,38 +212,6 @@ main > #mesProjets > article > .containerCards > .card > a {
   background-color: #F5D3D4;
   color: #57304F;
 }
-main > #formation {
-  width: 100%;
-  border: 1px solid red;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main > #formation > .carousel {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-main > #formation > .carousel > .carouselItem {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  border: 1px solid #57304F;
-}
-main > #formation > .carousel > .carouselItem > img {
-  width: 150px;
-  height: 150px;
-}
-main > #formation > .carousel > .carouselItem.active {
-  opacity: 1;
-}
 main > #onglet {
   width: 400px;
   height: 50px;
@@ -242,6 +226,171 @@ main > #onglet > a {
   color: #5f256f;
   text-align: center;
 }
+main > #formation {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+}
+main > #formation > #bandit-manchot-before {
+  display: flex;
+  width: 300px;
+  height: 100%;
+  border-right: 3px solid gold;
+}
+main > #formation > #bandit-manchot-after {
+  display: flex;
+  width: 300px;
+  height: 100%;
+  border-left: 3px solid gold;
+}
+main > #formation > .arcade-menu {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+main > #formation > .arcade-menu > #backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+main > #formation > .arcade-menu > #date-list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main > #formation > .arcade-menu > #date-list > li {
+  max-width: 30%;
+  margin: 30px;
+  flex: 1 0 30%;
+  color: violet;
+}
+main > #formation > .arcade-menu > #date-list > li.highlight {
+  border: 2px solid violet;
+}
+main > #formation > .arcade-menu .controls {
+  display: flex;
+}
+main > #formation > .arcade-menu .controls button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  margin: 15px;
+  cursor: pointer;
+}
+main > #formation > .arcade-menu .controls #prev-btn {
+  background-color: blue;
+}
+main > #formation > .arcade-menu .controls #next-btn {
+  background-color: blue;
+}
+main > #formation > .arcade-menu .controls #select-btn {
+  background-color: green;
+}
+main > #formation > .arcade-menu #popup-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border: 2px solid #000;
+}
+main > #formation > .arcade-menu #popup-content .close-btn {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 100px;
+  float: right;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+main > #formation h2,
+main > #formation li,
+main > #formation p {
+  color: #F5D3D4;
+}
+main > #formation > #etudesEtDiplomes {
+  width: 30%;
+  height: 200px;
+  border: 5px solid white;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #57304F;
+  text-align: center;
+  justify-content: center;
+}
+main > #formation > #etudesEtDiplomes > ul {
+  width: 100%;
+  list-style-type: none;
+}
+main > #formation > #etudesEtDiplomes > ul > li {
+  width: 100%;
+  list-style-type: none;
+}
+main > #formation > .carousel {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+main > #formation > .carousel > .carouselItem {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+}
+main > #formation > .carousel > .carouselItem > img {
+  width: 150px;
+  height: 150px;
+}
+main > #formation > .carousel > .carouselItem.active {
+  opacity: 1;
+}
+main > #formation > #Expro {
+  width: 30%;
+  height: 200px;
+  border: 5px solid white;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #57304F;
+  text-align: center;
+  justify-content: center;
+}
 main > #contact {
   width: 100%;
 }
@@ -252,17 +401,17 @@ main > #contact > #titreFormulaire {
   color: #57304F;
 }
 main > #contact > #formulaire {
-  width: 1000px;
+  max-width: 1000px;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 50px auto;
-  background-color: #57304f;
+  background-color: #57304F;
   border-radius: 10px 10px 10px 10px;
 }
 main > #contact > #formulaire > #boite {
-  width: 500px;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -351,89 +500,73 @@ main > #contact > #formulaire > #boite > form > #identity > .champ > input {
   padding-left: 10px;
   margin-top: 10px;
 }
-main > #contact > #formulaire > img {
-  width: 500px;
-  height: 100%;
-  border: 1px solid #57304F;
+main > #contact > #formulaire > #reseauxSociaux {
+  width: 50%;
+  border: 1px solid black;
+}
+main > #contact > #formulaire > #reseauxSociaux > #fondImg {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #F5D3D4;
+  left: 25px;
+  top: 180px;
+}
+main > #contact > #formulaire > #reseauxSociaux > #fondImg > .rezo {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial {
+  position: absolute;
+  top: 80%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial > .mediaLogo {
+  position: absolute;
+  transform-origin: bottom center;
+  animation: orbit 10s linear infinite;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial > .mediaLogo > img {
+  width: 90px;
+  height: 90px;
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateY(225px);
+  }
+  to {
+    transform: rotate(360deg) translateY(225px) rotate(-360deg);
+  }
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(2) {
+  animation-delay: 1s;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(3) {
+  animation-delay: 2s;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(4) {
+  animation-delay: 3s;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(5) {
+  animation-delay: 4s;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(6) {
+  animation-delay: 5s;
+}
+main > #contact > #formulaire > #reseauxSociaux > #logosSocial .mediaLogo:nth-child(7) {
+  animation-delay: 6s;
 }
 
 /*....................FOOTER.............................*/
 footer {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
   border-top: solid 1px grey;
 }
 
-/*....................MEDIA.QUERIES.............................*/
-@media only screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) {
-  .mainHeaderRes1 {
-    width: 150px;
-    height: 500px;
-    margin-left: 25px;
-    margin-top: 250px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mainHeaderRes1 > #logo {
-    width: 150px;
-    height: 100px;
-    background-color: #f5d3d4;
-    display: flex;
-    justify-content: center;
-  }
-  .mainHeaderRes1 > #logo > a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-  }
-  .mainHeaderRes1 > #logo > a > img {
-    width: 68px;
-    height: 68px;
-    border: 1px solid #00d4e0;
-    border-radius: 100px;
-    background-color: #57304f;
-  }
-  .mainHeaderRes1 > nav {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5d3d4;
-  }
-  .mainHeaderRes1 > nav > ul {
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-  }
-  .mainHeaderRes1 > nav > ul > li {
-    width: 69px;
-    height: 69px;
-    border: 1px solid #00d4e0;
-    background-color: #57304f;
-    border-radius: 100px;
-    margin: 10px auto;
-  }
-  .mainHeaderRes1 > nav > ul > li > a {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #00d4e0;
-    font-size: 0.8rem;
-  }
-  /*....................SECTION.............................*/
-  section {
-    width: 250px;
-    position: absolute;
-    margin-left: 200px;
-    margin-top: 25px;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*....................MEDIA.QUERIES.............................*//*# sourceMappingURL=style.css.map */

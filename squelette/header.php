@@ -7,22 +7,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio.freu</title>
+    <title>dimitridevweb.fr</title>
     <link rel="stylesheet" href="./CSS/style.css"
     >
 </head>
 <body>
 
-
+<audio id="background-audio" autoplay loop>
+        <source src="chemin/vers/votre-fichier.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
 <?php
     
-    try{
-        $db = new PDO ('mysql:host=localhost;dbname=portfolio','root','');
-    }
+  //    $host_name = 'db5012904801.hosting-data.io';
+  // $database = 'dbs10838740';
+  // $user_name = 'dbu5426520';
+  // $password = 'S006482o&';
+  // $dbh = null;
 
-    catch (Exception $e){
-        die('erreur : '. $e->getMessage());
-    }
+  // try {
+  //   $db = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password);
+  // } catch (PDOException $e) {
+  //   echo "Erreur!:" . $e->getMessage() . "<br/>";
+  //   die();
+  // }
 
         
 ?>
@@ -30,7 +38,7 @@
 
 
 
-    <header class=" mainHeader mainHeaderRes1 mainHeaderRes2 mainHeaderRes3">
+    <header class=" mainHeader mainHeaderRes1 mainHeaderRes2 mainHeaderRes3 row-limi-size">
     
             <div id="logo"><a href="./index.php"> <img src="./img/logoDef.png" title="retour a l'accueil"> </a></div>
             <nav>
@@ -43,4 +51,4 @@
 
         
     </header>
-    <main>
+    <main class="row-limit-size">

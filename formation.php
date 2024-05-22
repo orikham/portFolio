@@ -1,77 +1,67 @@
 <?php include './squelette/header.php'; ?>
 
-
-
-<div id="onglet">
-		<a href="#">Developpeur Web</a>
-		<!-- <a href="#">Boulangerie</a>
-		<a href="#">Restauration</a> -->
-	</div>
-
 <section id="formation">
-	
-		<div id="etudesEtDiplomes">
-			<h2>Etudes et diplômes</h2>
-			<ul>
-				<li>2023 : Developpeur Web et Web Mobile </li>
-				<li>2014 : Action Territoriale d'Insertion5 mois AREP de Fougères</li>
-				<li>2013 : Compétences Clés3 mois CLPS Fougères</li>
-				<li>2008 : Prestation d'Orientation Professionnelle3 mois CLPS Fougères</li>
-				<li>2007 : Niveau CAP Boulanger2 ans CFA Ker lann</li>
-				<li>2003 : B2I college jeanne d’arc fougere</li>
-			</ul>
-		</div>
-
-		<div class="carousel">
-			<div class="carouselItem">
-				<img src="./SVG/behance.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/css3.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/discord.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/dribbble.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/figma.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/git.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/github.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/html5.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/js.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/notion.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/php.svg">
-			</div>
-			<div class="carouselItem">
-				<img src="./SVG/vs_code.svg">
-			</div>
-		</div>
-
-		<div id="Expro">
+	<!-- <div id="Expro">
 				<h2>Expériences professionnelles : </h2>
 				<p>
 					2023 <span class="ligne">developpeur web stagiaire</span></br>
 					2 mois <span class="ligne">ENTREPRISE-VILLE</span></br>
 					</br>
 					2018 <span class="ligne">developpeur web stagiaire (stage de decouverte)</span></br>
-					3 semaine <span class="ligne">yo&co-St Aubin du Cormiers</span></br>
+					3 semaine <span class="ligne">ATI informatique-St Aubin du Cormiers</span></br>
 					
 				</p>
-				</div>
+		</div> -->
+
+
+	<div class="bandit-manchot" id="bandit-manchot-before">
+
+	</div>
+
+	<div class="arcade-menu">
+	<video id="backgroundVideo" autoplay loop muted>
+        <source src="galaxyone.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+		<ul id="date-list">
+			<li data-date="2007">2007</li>
+			<li data-date="2008">2008</li>
+			<li data-date="2013">2013</li>
+			<li data-date="2014">2014</li>
+			<li data-date="2019">2019</li>
+			<li data-date="2023">2023</li>
+		</ul>
+		<div id="popup-content" class="popup">
+			<span class="close-btn">X</span>
+			<div id="content"></div>
+		</div>
+		<div class="controls">
+			<button id="prev-btn">A</button>
+			<button id="next-btn">B</button>
+			<button id="select-btn">START</button>
+		</div>
+	</div>
+
+	<div class="bandit-manchot" id="bandit-manchot-after">
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 

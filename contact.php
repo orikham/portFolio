@@ -13,32 +13,48 @@
                         pour me contacter</p>
             </div>
 
-            <form method="post" action="#">
+            <form method="post" action="envoisMail.php">
                 <div id="identity">
                     <div class="champ">
                         <label for="Nom">Nom : </label><br>
-                        <input type="text" id="Nom" placeholder="nom">
+                        <input type="text" id="Nom" placeholder="nom" required>
                     </div>
                     <div class="champ">
-                        <label for="Prénom">Prénom : </label><br>
-                        <input type="text" id="Prénom" placeholder="Prénom">
+                        <label for="prenom">Prénom : </label><br>
+                        <input type="text" id="prenom" placeholder="Prénom" required>
                     </div>
                 </div>
                     <div class="champ">
-                        <label for="">mail : </label><br>
-                        <input type="email" id="mail" style="width:400px;" placeholder="Monadresse@mail.com">
+                        <label for="mail">mail : </label><br>
+                        <input type="email" id="mail" style="width:400px;" placeholder="Monadresse@mail.com" required>
                     </div><br>
                     <div class="champ">
-                        <label for="Message"> Message : </label><br>
-                        <textarea type="text" id="Message" placeholder="Votre message/demande d'information"></textarea>
+                        <label for="subject">Objet : </label><br>
+                        <input type="text" id="subject" placeholder="Objet" required>
+
+                        
                     </div>
-                    <submit class="formu">Envoyer</submit>
+                    <div class="champ">
+                        
+
+                        <label for="Message"> Message : </label><br>
+                        <textarea type="text" id="Message" placeholder="Votre message/demande d'information" required></textarea>
+                    </div>
+                    <submit class="formu" name="submit" value="submit">Envoyer</submit>
             </form>
         </div>
         <div id="reseauxSociaux">
-            <img src="./IMG/reseauxSociaux.png" alt="social picture" width="500px">
+            <div id="fondImg"><img class="rezo" src="./IMG/reseauxSociaux.png" alt="social picture" ></div>
             <div id="logosSocial">
-                
+                <a class="mediaLogo" href="http://"><img  src="./SVG/Facebook.svg" alt=""></a>
+                <a class="mediaLogo" href="https://www.instagram.com/"><img class="mediaLogo" src="./SVG/instagram.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/discord.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/linkedin.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/snapchat.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/twitter.svg" alt=""></a>
+                <a class="mediaLogo" href="http://"><img class="mediaLogo" src="./SVG/whatsapp.svg" alt=""></a>
+
+
             </div>
         </div>
     </article>

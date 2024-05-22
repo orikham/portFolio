@@ -1,1 +1,0 @@
-<img src="place_de_la_mairie.png" alt="acueill"/>
