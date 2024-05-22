@@ -3,20 +3,20 @@
 
 
 
-  $(document).ready(function() { // $ remplace/equivaut a ecrire jquery
-    // Ajouter la classe 'active' au premier élément carouselItem
-    $('.carouselItem').first().addClass('active');
+//   $(document).ready(function() { // $ remplace/equivaut a ecrire jquery
+//     // Ajouter la classe 'active' au premier élément carouselItem
+//     $('.carouselItem').first().addClass('active');
   
-    setInterval(function() {
-      // Retirer la classe 'active' de l'élément actif actuel et ajouter la classe 'active' à l'élément suivant
-      $('.active').removeClass('active').next('.carouselItem').addClass('active');
+//     setInterval(function() {
+//       // Retirer la classe 'active' de l'élément actif actuel et ajouter la classe 'active' à l'élément suivant
+//       $('.active').removeClass('active').next('.carouselItem').addClass('active');
   
-      // Si aucun élément n'est actif, ajouter la classe 'active' au premier élément
-      if ($('.active').length == 0) {
-        $('.carouselItem').first().addClass('active');
-      }
-    }, 1500); 
-  });
+//       // Si aucun élément n'est actif, ajouter la classe 'active' au premier élément
+//       if ($('.active').length == 0) {
+//         $('.carouselItem').first().addClass('active');
+//       }
+//     }, 1500); 
+//   });
   
 
 
@@ -101,21 +101,28 @@
     });
 
     document.getElementById('select-btn').addEventListener('click', () => {
-        // Génère de nouveaux symboles pour le bandit manchot
-        generateBanditManchot(banditManchotBefore);
-        generateBanditManchot(banditManchotAfter);
+        
 
-        // Vérifie si les symboles sont identiques dans les deux bandits
-        if (banditManchotBefore.innerHTML === banditManchotAfter.innerHTML) {
-            // Déclenche le son de jackpot
-            const jackpotSound = new Audio('jackpotsong.mp3');
-            jackpotSound.play();
-        }
+      
 
         const selectedDate = dateList[currentIndex].getAttribute('data-date');
         contentDiv.innerHTML = datesContent[selectedDate];
         popupContent.style.display = 'block';
-        playSelectSound();
+        
+    });
+
+    document.getElementById('game-btn').addEventListener('click', () => {
+        // Génère de nouveaux symboles pour le bandit manchot
+        generateBanditManchot(banditManchotBefore);
+        generateBanditManchot(banditManchotAfter);
+
+          // Vérifie si les symboles sont identiques dans les deux bandits
+        if (banditManchotBefore.innerHTML === banditManchotAfter.innerHTML) {
+            // Déclenche le son de jackpot
+            const jackpotSound = new Audio('jackpotsong.mp3');
+            jackpotSound.play();
+            playSelectSound();
+        }
     });
 
     closeBtn.addEventListener('click', () => {

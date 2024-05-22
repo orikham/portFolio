@@ -39,6 +39,7 @@
 			<button id="prev-btn">A</button>
 			<button id="next-btn">B</button>
 			<button id="select-btn">START</button>
+			<button id="game-btn">SELECT</button>
 		</div>
 	</div>
 
