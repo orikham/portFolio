@@ -78,6 +78,7 @@
 
     const selectSound = new Audio(); // Crée un nouvel objet Audio
     selectSound.src = 'selectsong.mp3';
+    selectSound.volume = 1.0;
 
     const playClickSound = () => {
         clickSound.currentTime = 0; // Remet le son au début
@@ -86,6 +87,7 @@
 
     const playSelectSound = () => {
         selectSound.currentTime = 0; // Remet le son au début
+        
         selectSound.play(); // Joue le son
     };
 
@@ -147,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
       audio.id = 'background-audio';
       audio.autoplay = true;
       audio.loop = true;
-      audio.volume = 0.5;  // Ajustez le volume ici (0.0 à 1.0)
+      audio.volume = 0.3;  // Ajustez le volume ici (0.0 à 1.0)
 
       var source = document.createElement('source');
       source.src = 'formationsong.mp3';

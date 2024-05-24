@@ -20,21 +20,13 @@ body {
 }
 
 .mainHeader {
-  height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #57304F;
 }
-.mainHeader > #logo {
-  width: 400px;
-}
-.mainHeader > #logo > a {
-  width: 400px;
-}
 .mainHeader > #logo > a > img {
   width: 200px;
-  height: 200px;
 }
 .mainHeader > nav {
   width: 800px;
@@ -161,7 +153,7 @@ main > #formation {
   margin: 50px auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #000;
 }
@@ -295,6 +287,10 @@ main > #mesProjets > article > .containerCards > .card {
   border-radius: 25px;
   margin: 25px;
 }
+main > #mesProjets > article > .containerCards > .card > .languages > img {
+  width: 25px;
+  height: 25px;
+}
 main > #mesProjets > article > .containerCards > .card > img {
   width: 350px;
   height: 200px;
@@ -332,20 +328,6 @@ main > #mesProjets > article > .containerCards > .card > a {
   text-decoration: none;
   background-color: #F5D3D4;
   color: #57304F;
-}
-main > #onglet {
-  width: 400px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-main > #onglet > a {
-  width: 50%;
-  color: #5f256f;
-  text-align: center;
 }
 main > #contact {
   width: 100%;
